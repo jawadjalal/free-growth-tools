@@ -1,0 +1,76 @@
+.nx .tl-input.tl-area { height: auto; min-height: calc(4 * 1.5em + 2rem); padding: 0.875rem 1rem; line-height: 1.5; resize: vertical; font-weight: 400; }
+
+[data-sp-result]:not([hidden]) + .tl-empty { display: none; }
+
+.sp-preview-label { margin: 0 0 0.75rem; font-size: var(--s-small); font-weight: 500; color: var(--ink-2); }
+
+.sp-scale {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.sp-scale-inner {
+  width: max-content;
+  max-width: none;
+  transform: scale(var(--sp-scale, 1));
+  transform-origin: top left;
+}
+
+.sp-card {
+  box-sizing: content-box;
+  width: 652px;
+  padding: 1rem 1.1rem 1.15rem;
+  border-radius: var(--r);
+  background: var(--paper);
+  border: 1px solid var(--edge-2);
+  overflow: hidden;
+}
+
+.nx .sp-site { margin: 0 0 0.15rem; font-size: var(--s-small); font-weight: 500; color: var(--ink); font-family: Arial, sans-serif; }
+.nx .sp-url { margin: 0 0 0.35rem; font-size: var(--s-small); color: var(--ink-2); font-family: Arial, sans-serif; }
+.nx .sp-title {
+  margin: 0 0 0.35rem;
+  width: 652px;
+  max-width: 652px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #1a0dab; 
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.nx .sp-desc {
+  margin: 0;
+  box-sizing: content-box;
+  width: 652px;
+  max-width: 652px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--ink);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.nx .sp-cutoff { margin-top: 0.85rem; }
+
+.nx .sp-h2 { margin-top: 1.75rem; font-size: var(--s-body); letter-spacing: 0; }
+.nx .sp-readout { margin-top: 0.35rem; font-size: var(--s-small); font-variant-numeric: tabular-nums; color: var(--ink); }
+
+.sp-notes { margin-top: 1.25rem; display: grid; gap: 0.5rem; list-style: none; padding: 0; }
+.sp-notes:empty { display: none; }
+.nx .sp-notes li { position: relative; padding-left: 1.25rem; font-size: var(--s-small); line-height: 1.5; color: var(--ink); }
+.sp-notes li::before { content: ''; position: absolute; left: 0.15rem; top: 0.55em; width: 8px; height: 8px; border-radius: 50%; background: var(--pop); }
+
+.nx .tl-answer-cta a[data-sp-cta="intro"] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: 0.35rem;
+}

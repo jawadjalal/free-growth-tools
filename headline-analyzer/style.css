@@ -1,0 +1,129 @@
+.ha-form .tl-input.tl-area {
+  height: auto;
+  min-height: calc(3 * 1.5em + 2rem);
+  padding: 0.875rem 1rem;
+  line-height: 1.5;
+  resize: vertical;
+  font-weight: 400;
+}
+.ha-count {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.35rem;
+  font-size: var(--s-small);
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.ha-go { margin-top: 0.5rem; }
+[data-ha-result]:not([hidden]) + .tl-empty { display: none; }
+.ha-result { scroll-margin-top: 6.5rem; }
+
+.ha-empty-list {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  padding: 0;
+  font-size: var(--s-small);
+  line-height: 1.4;
+  color: var(--ink);
+}
+.ha-empty-list li { position: relative; padding-left: 1.25rem; }
+.ha-empty-list li::before {
+  content: '';
+  position: absolute;
+  left: 0.2rem;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink-2);
+}
+
+.nx .ha-numbers {
+  font-size: var(--s-say);
+  line-height: 1.2;
+  letter-spacing: var(--tr-3);
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.ha-replay {
+  margin-top: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-radius: var(--r);
+  background: color-mix(in srgb, var(--ink) 4%, var(--paper));
+  font-size: var(--s-body);
+  line-height: 1.45;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+.ha-replay mark {
+  display: inline;
+  padding: 0.05em 0.3em;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--pop) 18%, var(--paper));
+  color: var(--ink);
+}
+
+.ha-checks {
+  margin-top: 1.5rem;
+  display: grid;
+  list-style: none;
+  padding: 0 1.25rem;
+  border-radius: var(--r);
+  background: var(--paper);
+}
+.ha-check {
+  padding: 1.125rem 0;
+  font-size: var(--s-small);
+  line-height: 1.5;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.ha-check + .ha-check { border-top: 1px solid var(--edge); }
+.nx .ha-check > * + * { margin-top: 0.5rem; }
+.ha-check-head { display: flex; align-items: flex-start; gap: 0.625rem; }
+.ha-check-head .tl-mark { margin-top: 0.15em; }
+.is-look .tl-mark { color: var(--pop); }
+.is-skipped .tl-mark { color: var(--ink-2); }
+.nx .ha-check-name { font-size: var(--s-body); line-height: 1.3; font-weight: 700; color: var(--ink); }
+.nx .ha-state { margin-left: auto; padding-left: 0.75rem; flex: none; font-weight: 500; color: var(--ink-2); }
+.nx .is-look .ha-state { color: var(--ink); }
+.is-fine .ha-fix, .is-fine .ha-rule, .is-skipped .ha-rule { color: var(--ink-2); }
+.nx .ha-found { color: var(--ink); }
+.nx .is-look .ha-fix { font-weight: 700; color: var(--ink); }
+.nx .ha-rule { color: var(--ink-read); }
+.nx .ha-rule a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--ink-2);
+  transition: text-decoration-color var(--t-hover) var(--ease-out);
+}
+.nx .ha-rule a:hover { text-decoration-color: var(--ink); text-decoration-thickness: 2px; }
+.ha-marks mark {
+  display: inline;
+  padding: 0.05em 0.3em;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--pop) 18%, var(--paper));
+  color: var(--ink);
+  line-height: 1.8;
+}
+.ha-result .tl-acts + .tl-note { margin-top: 0.75rem; }
+
+.tl-answer-cta a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+@media (max-width: 760px) {
+  .ha-checks { padding: 0 1rem; }
+  .ha-check { padding: 0.875rem 0; }
+  .ha-check-head { flex-wrap: wrap; row-gap: 0; }
+  .ha-empty-list { grid-template-columns: 1fr; }
+}

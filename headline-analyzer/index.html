@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Headline analyzer · free growth tools</title>
+<meta name="description" content="Check a headline or hook against six plain editorial rules. No score.">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/tool.css">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body class="nx">
+<main class="tl">
+  <header class="tl-head wrap">
+    <div class="tl-head-copy">
+      <h1 class="tl-title" style="--len: 17">Headline analyzer</h1>
+      <p class="tl-lede">Paste a headline or hook and check it against six plain editorial rules. No score, nothing stored.</p>
+    </div>
+  </header>
+  <section aria-labelledby="ha-tool" class="tl-tool wrap" data-ha=""> <div class="tl-in"> <h2 class="tl-h2" id="ha-tool">Check your headline</h2> <p class="tl-note">Everything happens in your browser. Nothing is sent or stored. You get a plain count of checks passed, not a score out of 100.</p> <noscript><p class="tl-err">This checker needs JavaScript. The rules below work without it.</p></noscript> <form autocomplete="off" class="tl-form ha-form" data-ha-form="" novalidate="" onsubmit="return false"> <label class="tl-field"><span class="tl-label">Where it goes</span> <select class="tl-input" data-ha-format=""> <option selected="" value="blog">Blog title</option> <option value="x">X post hook</option> <option value="email">Email subject line</option> <option value="video">Video hook</option> </select> </label> <label class="tl-field"><span class="tl-label">Your headline or hook</span> <textarea aria-describedby="ha-msg ha-count" class="tl-input tl-area" data-ha-text="" maxlength="200" placeholder="e.g. How founders get their first 100 sign-ups" rows="3"></textarea> <span class="ha-count" data-ha-count="" id="ha-count">0 / 200</span> <span aria-live="polite" class="tl-err" data-ha-msg="" id="ha-msg"></span> </label> <div class="tl-acts ha-go"><button class="btn btn--ink" data-ha-go="" disabled="" type="button">Check my headline</button> <span class="tl-note" data-ha-go-hint="">Paste a headline to check it</span></div> </form> </div> <div class="tl-out"> <div aria-live="polite" class="tl-panel ha-result" data-ha-result="" hidden=""> <p class="ha-numbers" data-ha-numbers=""></p> <p class="ha-replay" data-ha-replay=""></p> <ul class="ha-checks" data-ha-checks=""></ul> <div class="tl-acts"><button class="btn btn--paper ha-copy" data-ha-copy="" type="button">Copy report</button> <span aria-live="polite" class="tl-note" data-ha-copied=""></span></div> <p class="tl-note">Copies the checks and fixes, not your headline.</p> </div> <div class="tl-panel tl-empty"> <p class="tl-empty-h">Your checks show here</p> <p>Each check says Looks fine or Worth a look, with the rule and where it comes from. Above them, a plain “N of 6 checks passed”.</p> <ul aria-label="The checks" class="ha-empty-list"><li>Length</li><li>First three words</li><li>Specific detail</li><li>Clear promise</li><li>Filler and hype words</li><li>Caps and punctuation</li></ul> </div> <aside aria-labelledby="ha-card-h" class="tl-card" data-ha-card="" hidden=""> <h3 class="tl-card-h" id="ha-card-h">A good headline is one line</h3> <p>If your content isn't bringing in sign-ups, book a free 15-minute Growth Check: we name what's behind it, live, and you leave with a free growth breakdown and strategy.</p> <a class="btn btn--paper tl-book press" data-ha-cta="result" href="https://ignura.com/book?utm_source=github&amp;utm_medium=free-growth-tools&amp;utm_campaign=headline-analyzer">Book a free Growth Check</a> </aside> </div> </section>
+  <footer class="ft wrap">
+    <p><a href="../index.html">All tools</a> · <a href="https://ignura.com/tools/headline-analyzer">Live version on ignura.com</a></p>
+    <p>Ignura builds growth solutions for startups. <a href="https://ignura.com">ignura.com</a></p>
+  </footer>
+</main>
+</body>
+</html>

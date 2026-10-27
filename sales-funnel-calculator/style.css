@@ -1,0 +1,20 @@
+.sf-pair > .tl-field { min-width: 0; }
+.sf-per { border: 0; padding: 0; margin: 0; min-width: 0; display: grid; gap: 0.5rem; }
+.sf-out[hidden], .sf-ex[hidden], .sf-bignote[hidden] { display: none; }
+.sf-out { display: grid; gap: 1rem; }
+.nx .sf-help { margin-top: 0.15rem; font-size: var(--s-small); line-height: 1.45; }
+.nx .sf-ex { font-size: var(--s-small); font-weight: 600; color: var(--ink); }
+.sf-exbtn { min-height: 44px; }
+.nx .sf-head { font-size: var(--s-body); font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+.sf-funnel { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
+.sf-step { padding: 0.75rem 1rem; border-radius: var(--r); background: var(--soft); min-width: 0; }
+.sf-step:nth-child(2) { margin-inline: 4%; } .sf-step:nth-child(3) { margin-inline: 8%; }
+.sf-step:nth-child(4) { margin-inline: 12%; } .sf-step:nth-child(5) { margin-inline: 16%; }
+.nx .sf-step-n { margin: 0; font-variant-numeric: tabular-nums; }
+.nx .sf-step-n b { font-size: 1.35em; }
+.nx .sf-formula { margin-top: 0.2rem; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.nx .sf-lost { margin-top: 1rem; font-size: var(--s-small); }
+@media (max-width: 480px) { .sf-step:nth-child(n) { margin-inline: 0; } }
+.sf-step { background: var(--paper); }
+.nx .sf-exbtn { border: 1px solid var(--ink-2); }
+.sf-cta44 { display: inline-flex; align-items: center; min-height: 44px; }
